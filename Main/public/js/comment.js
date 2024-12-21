@@ -1,7 +1,7 @@
 const newFormHandler = async (event) => {
     event.preventDefault();
-const blogID = event.target.value;
-
+const blogId = event.target.getAttribute("value");
+console.log(blogId)
   // targeting comment input 
 const content = document.querySelector('#comment-content').value.trim();
   
@@ -15,15 +15,15 @@ const content = document.querySelector('#comment-content').value.trim();
       });
   
       if (response.ok) {
-        document.location.replace('/profile');
+        document.location.reload();
       } else {
-        alert('Failed to cooment the post');
+        alert('Failed to comment the post');
       }
     }
   };
   
   document
-    .querySelector('#comenter')
+    .querySelector('#commenter')
     .addEventListener('click', newFormHandler);
   
 
