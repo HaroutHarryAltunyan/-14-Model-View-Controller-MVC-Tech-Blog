@@ -1,5 +1,6 @@
 {
   "name": "crowd-funding",
+  //change crowd-funding to tech-blog 
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
