@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', () => {
 const newFormHandler = async (event) => {
   event.preventDefault();
 
@@ -45,3 +46,5 @@ document
 document
   .querySelector('.blog-list')
   .addEventListener('click', delButtonHandler);
+
+});
